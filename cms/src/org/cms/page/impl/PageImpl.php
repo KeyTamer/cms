@@ -10,8 +10,7 @@ use src\org\cms\page\Page;
  */
 class PageImpl implements Page
 {
-
-    // TODO - Insert your code here
+    private static $instance = new PageImpl();
     
     /**
      */
@@ -51,10 +50,9 @@ class PageImpl implements Page
      * @see \src\org\cms\page\Page::getInstance()
      *
      */
-    public function getInstance()
+    public static function getInstance()
     {
-        
-        // TODO - Insert your code here
+        return PageImpl::$instance;
     }
 
     /**

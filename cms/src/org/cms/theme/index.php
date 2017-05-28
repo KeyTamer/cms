@@ -1,13 +1,10 @@
-<?php
-use src\org\cms\page\Page;
-
-?>
+<?php include_once 'src/org/cms/index.php'; ?>>
 <!DOCTYPE html>
 <html>
 <head>
 
   <meta charset="utf-8">
-  <title><?php Page::get("author") ?></title>
+  <title><?php $page->get("title"); ?></title>
 
 </head>
 <body>
