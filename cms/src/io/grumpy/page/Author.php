@@ -7,4 +7,3 @@ class Author
     public function __construct()
     {}
 }
-
